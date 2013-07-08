@@ -247,6 +247,10 @@ config LZO_HW_ALGO
 	help
 	Support for HW LZO ALGO.
 
+config DECOMPRESS_LZ4
+	select LZ4_DECOMPRESS
+	tristate
+
 #
 # Generic allocator support is selected if needed
 #
